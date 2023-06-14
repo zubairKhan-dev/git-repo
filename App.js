@@ -15,8 +15,8 @@ Notifications.setNotificationHandler({
 
 export default function App() {
 
+  //use effect
   useEffect(()=> {
-
     async function configurePushNotifications() {
       const {status} = await Notifications.getPermissionsAsync();
       let finalStatus= status;
